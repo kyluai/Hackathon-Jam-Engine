@@ -31,7 +31,7 @@ export function About() {
                 <h3 className="text-xl font-semibold">Two Friends, One Passion</h3>
               </div>
               <p className="mt-4 text-lg text-muted-foreground">
-                We're two friends who started coding together in high school, bonding over our shared love for technology and music. 
+                We're two friends who have both been coding since high school, bonding over our shared interest for technology and music. 
                 What began as simple coding projects evolved into a deep passion for creating tools that bring people together through music.
               </p>
             </div>
