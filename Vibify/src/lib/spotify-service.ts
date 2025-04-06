@@ -405,17 +405,17 @@ export class SpotifyService {
         
         if (!popularResponse.data.tracks || popularResponse.data.tracks.length === 0) {
           console.log('Still no recommendations found with popular params');
-          return [];
-        }
-        
+        return [];
+      }
+      
         console.log(`Found ${popularResponse.data.tracks.length} popular recommendations`);
-        
+      
         // Transform the tracks to our format
         const recommendations = popularResponse.data.tracks.map((track: any) => ({
-          id: track.id,
+        id: track.id,
           title: track.name,
-          artist: track.artists[0].name,
-          album: track.album.name,
+        artist: track.artists[0].name,
+        album: track.album.name,
           albumArt: track.album.images[0]?.url || '',
           imageUrl: track.album.images[0]?.url || '',
           previewUrl: track.preview_url,
@@ -2231,7 +2231,7 @@ export class SpotifyService {
         // Check if the trackId is a valid Spotify track ID (should be 22 characters)
         // If not, use the recommendation's id as a fallback
         if (trackId && trackId.length === 22) {
-          return `spotify:track:${trackId}`;
+        return `spotify:track:${trackId}`;
         } else {
           console.warn(`Invalid track ID in spotifyUrl: ${rec.spotifyUrl}, using fallback ID: ${rec.id}`);
           return `spotify:track:${rec.id}`;
