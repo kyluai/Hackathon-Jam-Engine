@@ -46,8 +46,8 @@ export function HomePage() {
       icon: <Image className="h-6 w-6" />,
       link: '/picture-to-song',
       color: 'hover:bg-pink-500/10 hover:border-pink-500/20',
-      inDevelopment: true,
-      comingSoon: false
+      inDevelopment: false,
+      comingSoon: true
     },
     {
       title: 'Daylist Feature',
