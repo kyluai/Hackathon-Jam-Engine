@@ -6,11 +6,11 @@ export default {
     extend: {
       colors: {
         background: {
-          DEFAULT: 'rgb(var(--background) / <alpha-value>)',
+          DEFAULT: '#FFFFFF',
           dark: '#0A0A0B',
         },
         foreground: {
-          DEFAULT: 'rgb(var(--foreground) / <alpha-value>)',
+          DEFAULT: '#0A0A0B',
           dark: '#FAFAFA',
         },
         primary: {
